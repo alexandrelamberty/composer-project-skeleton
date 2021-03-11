@@ -1,0 +1,39 @@
+{
+  "name": "alexandrelamberty/php-composer-project-skeleton",
+  "description": "PHP Composer Project Skeleton",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Alexandre Lamberty",
+      "email": "alexandrelamberty@gmail.com",
+      "homepage": "http://alexandrelamberty.com"
+    }
+  ],
+  "require": {
+    "php": "7.2.*",
+    "alexandrelamberty/php-composer-library-skeleton": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7"
+  },
+  "config": {
+    "vendor-dir": "./vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Eevos\\": "src/Eevos/"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests/"
+    ],
+    "files": []
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/alexandrelamberty/php-composer-library-skeleton"
+    }
+  ]
+}
